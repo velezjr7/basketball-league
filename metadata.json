@@ -1,0 +1,5 @@
+{
+  "name": "BasketLeague Manager",
+  "description": "A comprehensive dashboard for managing a basketball tournament with 11 teams, featuring schedules, standings, and special statistics.",
+  "requestFramePermissions": []
+}
