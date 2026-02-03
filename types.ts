@@ -6,22 +6,26 @@ export interface Team {
   color: string; // Hex code for team branding
 }
 
+export type MatchStatus = "scheduled" | "played" | "suspended" | "default";
+
 export interface Match {
   id: string;
   homeTeamId: string;
   awayTeamId: string;
   homeScore?: number;
   awayScore?: number;
-  isPlayed: boolean;
+  status: MatchStatus;
   date: string;
   time: string;
   location: string;
+  rescheduledDate?: string; // If suspended, when is it played?
 }
 
 export interface Round {
   id: string;
   name: string; // e.g., "Jornada 1"
   matches: Match[];
+  restingTeamId?: string;
 }
 
 export interface TeamStats {
@@ -32,5 +36,6 @@ export interface TeamStats {
   pointsFor: number;
   pointsAgainst: number;
   diff: number;
-  points: number; // Standings points (e.g., 2 for win, 1 for loss)
+  points: number; // Standings points
+  gamesLostByDefault: number; // New field for default losses
 }
