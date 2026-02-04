@@ -26,7 +26,7 @@ export const TEAMS: Team[] = [
     id: "fussion",
     name: "Fussion",
     shortName: "FUS",
-    image: "rayos.png",
+    image: "fussion.png",
     color: "#10b981",
   },
   {
