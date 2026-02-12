@@ -51,10 +51,10 @@ export const TEAMS: Team[] = [
     color: "#06b6d4",
   },
   {
-    id: "mavs",
-    name: "Mavericks",
-    shortName: "MAV",
-    image: "mavs.jpg",
+    id: "okc",
+    name: "Oklahoma",
+    shortName: "OKC",
+    image: "oklahoma.png",
     color: "#93c5fd",
   },
   {
