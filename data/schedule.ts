@@ -323,7 +323,7 @@ export const SCHEDULE: Round[] = [
         homeTeamId: "grass",
         awayTeamId: "leg",
         status: "scheduled",
-        date: "2026-02-27",
+        date: "2026-02-27 Viernes",
         time: "20:00",
         location: "Cancha 1",
       },
